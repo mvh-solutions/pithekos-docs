@@ -1,4 +1,4 @@
-.. _big-idea-features:
+.. _background_features:
 
 ##################
 Proskomma Features
