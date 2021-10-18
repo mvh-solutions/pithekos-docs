@@ -5,7 +5,7 @@ A Scripture Runtime Engine
 --------------------------------------------------
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 2
 
    background/index
    getting_started/index

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Graphql schema documentation</title>
+    <title>idParts</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -130,7 +130,7 @@
                 Document
             </a>
         </li>
-        <li  title="idParts">
+        <li class="slds-is-active" title="idParts">
             <a href="idparts.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 idParts
             </a>
@@ -320,9 +320,10 @@
         </div>
     </div>
     <div class="container">
-        
-        <h1 class="slds-text-heading--large">Graphql schema documentation</h1>
-        <div class="slds-text-body--regular"></div>
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">idParts</h1>
+        <div class="slds-text-body--regular"><p>Type-dependent parts of the ID header</p>
+</div>
     </div>
 </section>
 <section>
@@ -333,7 +334,18 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">schema</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The top level of Proskomma queries</span></span></li><li><span class="tab"><span class="meta">query</span>: <a class="support type" href="query.doc.html">Query</a></span></li><li></li><li><span class="tab"><span class="comment line">#   Operations that change the state of Proskomma</span></span></li><li><span class="tab"><span class="meta">mutation</span>: <a class="support type" href="mutation.doc.html">Mutation</a></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">idParts</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The type of the ID</span></span></li><li><span class="tab"><span class="meta">type</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   An array of parts of the ID</span></span></li><li><span class="tab"><span class="meta">parts</span>: [<a class="support type" href="string.doc.html">String</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   A part of the ID, by index</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>index</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">part</span>(<span class="meta">index</span>: <a class="support type" href="int.doc.html">Int</a>!): <a class="support type" href="string.doc.html">String</a> </span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="document.doc.html" title="Document - A document, typically corresponding to USFM for one book">Document<em>A document, typically corresponding to USFM for one book</em></a><li></ul>
     </div>
 </section>
 <footer>

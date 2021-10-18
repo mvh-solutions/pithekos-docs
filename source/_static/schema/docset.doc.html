@@ -6,9 +6,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="styles/graphdoc.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
     <title>DocSet</title>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="assets/code.css" /><link type="text/css" rel="stylesheet" href="assets/require-by.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
     <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
@@ -16,7 +16,7 @@
             <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
                 <i class="material-icons">close</i>
             </button>
-                <h3 class="slds-text-heading--medium"><a href="">GraphQL Schema</a></h3>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
             <div class="slds-p-top--small">
                 <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
             </div>
@@ -80,6 +80,11 @@
                 Block
             </a>
         </li>
+        <li  title="cell">
+            <a href="cell.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                cell
+            </a>
+        </li>
         <li  title="cIndex">
             <a href="cindex.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 cIndex
@@ -125,6 +130,11 @@
                 Document
             </a>
         </li>
+        <li  title="idParts">
+            <a href="idparts.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                idParts
+            </a>
+        </li>
         <li  title="Item">
             <a href="item.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Item
@@ -138,6 +148,21 @@
         <li  title="KeyValue">
             <a href="keyvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 KeyValue
+            </a>
+        </li>
+        <li  title="kvEntry">
+            <a href="kventry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                kvEntry
+            </a>
+        </li>
+        <li  title="kvSequence">
+            <a href="kvsequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                kvSequence
+            </a>
+        </li>
+        <li  title="node">
+            <a href="node.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                node
             </a>
         </li>
         <li  title="orig">
@@ -158,6 +183,16 @@
         <li  title="Sequence">
             <a href="sequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Sequence
+            </a>
+        </li>
+        <li  title="tableSequence">
+            <a href="tablesequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                tableSequence
+            </a>
+        </li>
+        <li  title="treeSequence">
+            <a href="treesequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                treeSequence
             </a>
         </li>
         <li  title="verseNumber">
@@ -210,6 +245,11 @@
                 AttSpec
             </a>
         </li>
+        <li  title="InputBlockSpec">
+            <a href="inputblockspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputBlockSpec
+            </a>
+        </li>
         <li  title="InputItemObject">
             <a href="inputitemobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InputItemObject
@@ -218,6 +258,26 @@
         <li  title="InputKeyValue">
             <a href="inputkeyvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InputKeyValue
+            </a>
+        </li>
+        <li  title="KeyMatches">
+            <a href="keymatches.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KeyMatches
+            </a>
+        </li>
+        <li  title="KeyValues">
+            <a href="keyvalues.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KeyValues
+            </a>
+        </li>
+        <li  title="rowEqualsSpec">
+            <a href="rowequalsspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                rowEqualsSpec
+            </a>
+        </li>
+        <li  title="rowMatchSpec">
+            <a href="rowmatchspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                rowMatchSpec
             </a>
         </li>
     </ul>
@@ -274,7 +334,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">DocSet</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the docSet, which is formed by concatenating the docSet's selector </span></span></li><li><span class="tab"><span class="comment line">#   values</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The selectors of the docSet</span></span></li><li><span class="tab"><span class="meta">selectors</span>: [<a class="support type" href="keyvalue.doc.html">KeyValue</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   A selector for this docSet</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">selector</span>(<span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of the tags of this docSet</span></span></li><li><span class="tab"><span class="meta">tags</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether or not the docSet has the specified tag</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>tagName</strong>: The tag</span></span></li><li><span class="tab"><span class="meta">hasTag</span>(<span class="meta">tagName</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The documents in the docSet</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withChars</strong>: Return documents whose main sequence contains a </span></span></li><li><span class="tab"><span class="comment line">#   token whose payload is an exact match to one of the specified strings</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withMatchingChars</strong>: Return documents whose main sequence </span></span></li><li><span class="tab"><span class="comment line">#   contains a token whose payload matches the specified regexes</span></span></li><li><span class="tab"><span class="comment line">#   <strong>allChars</strong>: If true, documents where all search terms match will </span></span></li><li><span class="tab"><span class="comment line">#   be included</span></span></li><li><span class="tab"><span class="meta">documents</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">withChars</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withMatchingChars</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">allChars</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></span></li><li><span class="tab">): [<a class="support type" href="document.doc.html">Document</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The number documents in the docSet</span></span></li><li><span class="tab"><span class="meta">nDocuments</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The document with the specified book code</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>bookCode</strong>: The book code of the required document</span></span></li><li><span class="tab"><span class="meta">document</span>(<span class="meta">bookCode</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="document.doc.html">Document</a> </span></li><li></li><li><span class="tab"><span class="meta">hasMapping</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The internal index number corresponding to a string in a given docset enum</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>enumType</strong>: The enum to be searched</span></span></li><li><span class="tab"><span class="comment line">#   <strong>searchString</strong>: The string to match</span></span></li><li><span class="tab"><span class="meta">enumIndexForString</span>(<span class="meta">enumType</span>: <a class="support type" href="string.doc.html">String</a>!, <span class="meta">searchString</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Information about internal indexes matching the case-insensitive regex in a </span></span></li><li><span class="tab"><span class="comment line">#   given docset enum</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>enumType</strong>: The enum to be searched</span></span></li><li><span class="tab"><span class="comment line">#   <strong>searchRegex</strong>: The regex to match</span></span></li><li><span class="tab"><span class="meta">enumRegexIndexesForString</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">enumType</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">searchRegex</span>: <a class="support type" href="string.doc.html">String</a>!</span></span></li><li><span class="tab">): [<a class="support type" href="regexindex.doc.html">regexIndex</a>!]! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">DocSet</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the docSet, which is formed by concatenating the docSet's selector </span></span></li><li><span class="tab"><span class="comment line">#   values</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The selectors of the docSet</span></span></li><li><span class="tab"><span class="meta">selectors</span>: [<a class="support type" href="keyvalue.doc.html">KeyValue</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   A selector for this docSet</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the selector</span></span></li><li><span class="tab"><span class="meta">selector</span>(<span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of the tags of this docSet</span></span></li><li><span class="tab"><span class="meta">tags</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether or not the docSet has the specified tag</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>tagName</strong>: The tag</span></span></li><li><span class="tab"><span class="meta">hasTag</span>(<span class="meta">tagName</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The documents in the docSet</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>ids</strong>: A whitelist of ids of documents to include</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withChars</strong>: Return documents whose main sequence contains a </span></span></li><li><span class="tab"><span class="comment line">#   token whose payload is an exact match to one of the specified strings</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withMatchingChars</strong>: Return documents whose main sequence </span></span></li><li><span class="tab"><span class="comment line">#   contains a token whose payload matches the specified regexes</span></span></li><li><span class="tab"><span class="comment line">#   <strong>allChars</strong>: If true, documents where all search terms match will </span></span></li><li><span class="tab"><span class="comment line">#   be included</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withHeaderValues</strong>: Only return documents with the specified </span></span></li><li><span class="tab"><span class="comment line">#   header key/values</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withTags</strong>: Only return documents with all the specified tags</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withoutTags</strong>: Only return documents with none of the specified </span></span></li><li><span class="tab"><span class="comment line">#   tags</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sortedBy</strong>: Sort returned documents by the designated method </span></span></li><li><span class="tab"><span class="comment line">#   (currently paratext, alpha, alpha2)</span></span></li><li><span class="tab"><span class="meta">documents</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">ids</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withChars</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withMatchingChars</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">allChars</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withHeaderValues</span>: [<a class="support type" href="inputkeyvalue.doc.html">InputKeyValue</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withTags</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withoutTags</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sortedBy</span>: <a class="support type" href="string.doc.html">String</a></span></span></li><li><span class="tab">): [<a class="support type" href="document.doc.html">Document</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The number documents in the docSet</span></span></li><li><span class="tab"><span class="meta">nDocuments</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The document with the specified book code</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>bookCode</strong>: The book code of the required document</span></span></li><li><span class="tab"><span class="meta">document</span>(<span class="meta">bookCode</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="document.doc.html">Document</a> </span></li><li></li><li><span class="tab"><span class="meta">hasMapping</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The internal index number corresponding to a string in a given docset enum</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>enumType</strong>: The enum to be searched</span></span></li><li><span class="tab"><span class="comment line">#   <strong>searchString</strong>: The string to match</span></span></li><li><span class="tab"><span class="meta">enumIndexForString</span>(<span class="meta">enumType</span>: <a class="support type" href="string.doc.html">String</a>!, <span class="meta">searchString</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Information about internal indexes matching the case-insensitive regex in a </span></span></li><li><span class="tab"><span class="comment line">#   given docset enum</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>enumType</strong>: The enum to be searched</span></span></li><li><span class="tab"><span class="comment line">#   <strong>searchRegex</strong>: The regex to match</span></span></li><li><span class="tab"><span class="meta">enumRegexIndexesForString</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">enumType</span>: <a class="support type" href="string.doc.html">String</a>!,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">searchRegex</span>: <a class="support type" href="string.doc.html">String</a>!</span></span></li><li><span class="tab">): [<a class="support type" href="regexindex.doc.html">regexIndex</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of wordLike token strings in the docSet</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>coerceCase</strong>: Whether to coerce the strings </span></span></li><li><span class="tab"><span class="comment line">#   (toLower|toUpper|none)</span></span></li><li><span class="tab"><span class="meta">wordLikes</span>(<span class="meta">coerceCase</span>: <a class="support type" href="string.doc.html">String</a>): [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -296,7 +356,7 @@
 </div>
 </footer>
 </main>
-    <script src="scripts/focus-active.js"></script>
-    <script src="scripts/filter-types.js"></script>
-    <script src="scripts/toggle-navigation.js"></script>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
 </body>

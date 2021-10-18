@@ -6,9 +6,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="styles/graphdoc.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
     <title>Query</title>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="assets/code.css" /><link type="text/css" rel="stylesheet" href="assets/require-by.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
     <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
@@ -16,7 +16,7 @@
             <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
                 <i class="material-icons">close</i>
             </button>
-                <h3 class="slds-text-heading--medium"><a href="">GraphQL Schema</a></h3>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
             <div class="slds-p-top--small">
                 <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
             </div>
@@ -80,6 +80,11 @@
                 Block
             </a>
         </li>
+        <li  title="cell">
+            <a href="cell.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                cell
+            </a>
+        </li>
         <li  title="cIndex">
             <a href="cindex.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 cIndex
@@ -125,6 +130,11 @@
                 Document
             </a>
         </li>
+        <li  title="idParts">
+            <a href="idparts.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                idParts
+            </a>
+        </li>
         <li  title="Item">
             <a href="item.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Item
@@ -138,6 +148,21 @@
         <li  title="KeyValue">
             <a href="keyvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 KeyValue
+            </a>
+        </li>
+        <li  title="kvEntry">
+            <a href="kventry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                kvEntry
+            </a>
+        </li>
+        <li  title="kvSequence">
+            <a href="kvsequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                kvSequence
+            </a>
+        </li>
+        <li  title="node">
+            <a href="node.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                node
             </a>
         </li>
         <li  title="orig">
@@ -158,6 +183,16 @@
         <li  title="Sequence">
             <a href="sequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Sequence
+            </a>
+        </li>
+        <li  title="tableSequence">
+            <a href="tablesequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                tableSequence
+            </a>
+        </li>
+        <li  title="treeSequence">
+            <a href="treesequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                treeSequence
             </a>
         </li>
         <li  title="verseNumber">
@@ -210,6 +245,11 @@
                 AttSpec
             </a>
         </li>
+        <li  title="InputBlockSpec">
+            <a href="inputblockspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputBlockSpec
+            </a>
+        </li>
         <li  title="InputItemObject">
             <a href="inputitemobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InputItemObject
@@ -218,6 +258,26 @@
         <li  title="InputKeyValue">
             <a href="inputkeyvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InputKeyValue
+            </a>
+        </li>
+        <li  title="KeyMatches">
+            <a href="keymatches.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KeyMatches
+            </a>
+        </li>
+        <li  title="KeyValues">
+            <a href="keyvalues.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KeyValues
+            </a>
+        </li>
+        <li  title="rowEqualsSpec">
+            <a href="rowequalsspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                rowEqualsSpec
+            </a>
+        </li>
+        <li  title="rowMatchSpec">
+            <a href="rowmatchspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                rowMatchSpec
             </a>
         </li>
     </ul>
@@ -274,7 +334,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Query</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the processor, which is different for each Proskomma instance</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   A string describing the processor class</span></span></li><li><span class="tab"><span class="meta">processor</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The NPM package version</span></span></li><li><span class="tab"><span class="meta">packageVersion</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The selectors used to define docSets</span></span></li><li><span class="tab"><span class="meta">selectors</span>: [<a class="support type" href="selectorspec.doc.html">selectorSpec</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of docSets</span></span></li><li><span class="tab"><span class="meta">nDocSets</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The docSets in the processor</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>ids</strong>: A whitelist of ids of docSets to include</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withSelectors</strong>: Only return docSets that match the list of </span></span></li><li><span class="tab"><span class="comment line">#   selector values</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withBook</strong>: Only return docSets containing a document with the </span></span></li><li><span class="tab"><span class="comment line">#   specified bookCode</span></span></li><li><span class="tab"><span class="meta">docSets</span>(<span class="meta">ids</span>: [<a class="support type" href="string.doc.html">String</a>!], <span class="meta">withSelectors</span>: [<a class="support type" href="inputkeyvalue.doc.html">InputKeyValue</a>!], <span class="meta">withBook</span>: <a class="support type" href="string.doc.html">String</a>): [<a class="support type" href="docset.doc.html">DocSet</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The docSet with the specified id</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the docSet</span></span></li><li><span class="tab"><span class="meta">docSet</span>(<span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="docset.doc.html">DocSet</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of documents in the processor</span></span></li><li><span class="tab"><span class="meta">nDocuments</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The documents in the processor</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>ids</strong>: A whitelist of ids of documents to include</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withBook</strong>: Only return docSets containing a document with the </span></span></li><li><span class="tab"><span class="comment line">#   specified bookCode</span></span></li><li><span class="tab"><span class="meta">documents</span>(<span class="meta">ids</span>: [<a class="support type" href="string.doc.html">String</a>!], <span class="meta">withBook</span>: <a class="support type" href="string.doc.html">String</a>): [<a class="support type" href="document.doc.html">Document</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The document with the specified id</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the document</span></span></li><li><span class="tab"><span class="meta">document</span>(<span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="document.doc.html">Document</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>document1</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>document2</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mode</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">diff</span>(<span class="meta">document1</span>: <a class="support type" href="string.doc.html">String</a>!, <span class="meta">document2</span>: <a class="support type" href="string.doc.html">String</a>!, <span class="meta">mode</span>: <a class="support type" href="string.doc.html">String</a>!): [<a class="support type" href="diffrecord.doc.html">diffRecord</a>!]! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Query</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the processor, which is different for each Proskomma instance</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   A string describing the processor class</span></span></li><li><span class="tab"><span class="meta">processor</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The NPM package version</span></span></li><li><span class="tab"><span class="meta">packageVersion</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The selectors used to define docSets</span></span></li><li><span class="tab"><span class="meta">selectors</span>: [<a class="support type" href="selectorspec.doc.html">selectorSpec</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of docSets</span></span></li><li><span class="tab"><span class="meta">nDocSets</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The docSets in the processor</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>ids</strong>: A whitelist of ids of docSets to include</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withSelectors</strong>: Only return docSets that match the list of </span></span></li><li><span class="tab"><span class="comment line">#   selector values</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withBook</strong>: Only return docSets containing a document with the </span></span></li><li><span class="tab"><span class="comment line">#   specified bookCode</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withTags</strong>: Only return docSets with all the specified tags</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withoutTags</strong>: Only return docSets with none of the specified </span></span></li><li><span class="tab"><span class="comment line">#   tags</span></span></li><li><span class="tab"><span class="meta">docSets</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">ids</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withSelectors</span>: [<a class="support type" href="inputkeyvalue.doc.html">InputKeyValue</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withBook</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withTags</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withoutTags</span>: [<a class="support type" href="string.doc.html">String</a>!]</span></span></li><li><span class="tab">): [<a class="support type" href="docset.doc.html">DocSet</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The docSet with the specified id</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the docSet</span></span></li><li><span class="tab"><span class="meta">docSet</span>(<span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="docset.doc.html">DocSet</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of documents in the processor</span></span></li><li><span class="tab"><span class="meta">nDocuments</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The documents in the processor</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>ids</strong>: A whitelist of ids of documents to include</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withBook</strong>: Only return documents with the specified bookCode</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withHeaderValues</strong>: Only return documents with the specified </span></span></li><li><span class="tab"><span class="comment line">#   header key/values</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withTags</strong>: Only return documents with all the specified tags</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withoutTags</strong>: Only return documents with none of the specified </span></span></li><li><span class="tab"><span class="comment line">#   tags</span></span></li><li><span class="tab"><span class="comment line">#   <strong>sortedBy</strong>: Sort returned documents by the designated method </span></span></li><li><span class="tab"><span class="comment line">#   (currently ${Object.keys(bookCodeCompareFunctions).join(', ')})</span></span></li><li><span class="tab"><span class="meta">documents</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">ids</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withBook</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withHeaderValues</span>: [<a class="support type" href="inputkeyvalue.doc.html">InputKeyValue</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withTags</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withoutTags</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">sortedBy</span>: <a class="support type" href="string.doc.html">String</a></span></span></li><li><span class="tab">): [<a class="support type" href="document.doc.html">Document</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The document with the specified id, or the specified docSet and withBook</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>id</strong>: The id of the document</span></span></li><li><span class="tab"><span class="comment line">#   <strong>docSetId</strong>: The docSet of the document (use with withBook)</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withBook</strong>: The book of the document (use with docSetId)</span></span></li><li><span class="tab"><span class="meta">document</span>(<span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>, <span class="meta">docSetId</span>: <a class="support type" href="string.doc.html">String</a>, <span class="meta">withBook</span>: <a class="support type" href="string.doc.html">String</a>): <a class="support type" href="document.doc.html">Document</a> </span></li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>document1</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>document2</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="comment line">#   <strong>mode</strong>: [<strong>Not documented</strong>]</span></span></li><li><span class="tab"><span class="meta">diff</span>(<span class="meta">document1</span>: <a class="support type" href="string.doc.html">String</a>!, <span class="meta">document2</span>: <a class="support type" href="string.doc.html">String</a>!, <span class="meta">mode</span>: <a class="support type" href="string.doc.html">String</a>!): [<a class="support type" href="diffrecord.doc.html">diffRecord</a>!]! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -296,7 +356,7 @@
 </div>
 </footer>
 </main>
-    <script src="scripts/focus-active.js"></script>
-    <script src="scripts/filter-types.js"></script>
-    <script src="scripts/toggle-navigation.js"></script>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
 </body>

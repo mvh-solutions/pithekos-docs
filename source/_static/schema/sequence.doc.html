@@ -6,9 +6,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="styles/graphdoc.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
     <title>Sequence</title>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="assets/code.css" /><link type="text/css" rel="stylesheet" href="assets/require-by.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
     <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
@@ -16,7 +16,7 @@
             <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
                 <i class="material-icons">close</i>
             </button>
-                <h3 class="slds-text-heading--medium"><a href="">GraphQL Schema</a></h3>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
             <div class="slds-p-top--small">
                 <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
             </div>
@@ -80,6 +80,11 @@
                 Block
             </a>
         </li>
+        <li  title="cell">
+            <a href="cell.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                cell
+            </a>
+        </li>
         <li  title="cIndex">
             <a href="cindex.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 cIndex
@@ -125,6 +130,11 @@
                 Document
             </a>
         </li>
+        <li  title="idParts">
+            <a href="idparts.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                idParts
+            </a>
+        </li>
         <li  title="Item">
             <a href="item.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Item
@@ -138,6 +148,21 @@
         <li  title="KeyValue">
             <a href="keyvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 KeyValue
+            </a>
+        </li>
+        <li  title="kvEntry">
+            <a href="kventry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                kvEntry
+            </a>
+        </li>
+        <li  title="kvSequence">
+            <a href="kvsequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                kvSequence
+            </a>
+        </li>
+        <li  title="node">
+            <a href="node.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                node
             </a>
         </li>
         <li  title="orig">
@@ -158,6 +183,16 @@
         <li class="slds-is-active" title="Sequence">
             <a href="sequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Sequence
+            </a>
+        </li>
+        <li  title="tableSequence">
+            <a href="tablesequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                tableSequence
+            </a>
+        </li>
+        <li  title="treeSequence">
+            <a href="treesequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                treeSequence
             </a>
         </li>
         <li  title="verseNumber">
@@ -210,6 +245,11 @@
                 AttSpec
             </a>
         </li>
+        <li  title="InputBlockSpec">
+            <a href="inputblockspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputBlockSpec
+            </a>
+        </li>
         <li  title="InputItemObject">
             <a href="inputitemobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InputItemObject
@@ -218,6 +258,26 @@
         <li  title="InputKeyValue">
             <a href="inputkeyvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InputKeyValue
+            </a>
+        </li>
+        <li  title="KeyMatches">
+            <a href="keymatches.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KeyMatches
+            </a>
+        </li>
+        <li  title="KeyValues">
+            <a href="keyvalues.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KeyValues
+            </a>
+        </li>
+        <li  title="rowEqualsSpec">
+            <a href="rowequalsspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                rowEqualsSpec
+            </a>
+        </li>
+        <li  title="rowMatchSpec">
+            <a href="rowmatchspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                rowMatchSpec
             </a>
         </li>
     </ul>
@@ -274,7 +334,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Sequence</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the sequence</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The type of the sequence (main, heading...)</span></span></li><li><span class="tab"><span class="meta">type</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of blocks in the sequence</span></span></li><li><span class="tab"><span class="meta">nBlocks</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The blocks in the sequence</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withScopes</strong>: Only return blocks where the list of scopes is open</span></span></li><li><span class="tab"><span class="comment line">#   <strong>positions</strong>: Only return blocks whose zero-indexed position is in </span></span></li><li><span class="tab"><span class="comment line">#   the list</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withBlockScope</strong>: Only return blocks with the specified block </span></span></li><li><span class="tab"><span class="comment line">#   scope (eg 'blockScope/p')</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withScriptureCV</strong>: Only return blocks that contain items within </span></span></li><li><span class="tab"><span class="comment line">#   the specified chapter, verse or chapterVerse range</span></span></li><li><span class="tab"><span class="comment line">#   <strong>attSpecs</strong>: Ordered list of attribute specs whose values must </span></span></li><li><span class="tab"><span class="comment line">#   match those in 'attValues'</span></span></li><li><span class="tab"><span class="comment line">#   <strong>attValues</strong>: Ordered list of attribute values, used in </span></span></li><li><span class="tab"><span class="comment line">#   conjunction with 'attSpecs'</span></span></li><li><span class="tab"><span class="comment line">#   <strong>allAtts</strong>: If true, blocks where all attSpecs match will be </span></span></li><li><span class="tab"><span class="comment line">#   included</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withChars</strong>: Return blocks containing a token whose payload is an </span></span></li><li><span class="tab"><span class="comment line">#   exact match to one of the specified strings</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withMatchingChars</strong>: Return blocks containing a token whose </span></span></li><li><span class="tab"><span class="comment line">#   payload matches the specified regexes</span></span></li><li><span class="tab"><span class="comment line">#   <strong>allChars</strong>: If true, blocks where all regexes match will be </span></span></li><li><span class="tab"><span class="comment line">#   included</span></span></li><li><span class="tab"><span class="meta">blocks</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">withScopes</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">positions</span>: [<a class="support type" href="int.doc.html">Int</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withBlockScope</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withScriptureCV</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">attSpecs</span>: [[<a class="support type" href="attspec.doc.html">AttSpec</a>!]!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">attValues</span>: [[<a class="support type" href="string.doc.html">String</a>!]!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">allAtts</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withChars</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withMatchingChars</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">allChars</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></span></li><li><span class="tab">): [<a class="support type" href="block.doc.html">Block</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Sequence content grouped by scopes or milestones</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>byScopes</strong>: Produce one itemGroup for every different match of </span></span></li><li><span class="tab"><span class="comment line">#   the list of scopes</span></span></li><li><span class="tab"><span class="comment line">#   <strong>byMilestones</strong>: Start a new itemGroup whenever a milestone in the </span></span></li><li><span class="tab"><span class="comment line">#   list is encountered</span></span></li><li><span class="tab"><span class="comment line">#   <strong>includeContext</strong>: If true, adds scope and nextToken information </span></span></li><li><span class="tab"><span class="comment line">#   to each token</span></span></li><li><span class="tab"><span class="meta">itemGroups</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">byScopes</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">byMilestones</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">includeContext</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></span></li><li><span class="tab">): [<a class="support type" href="itemgroup.doc.html">ItemGroup</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of the tags of this sequence</span></span></li><li><span class="tab"><span class="meta">tags</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether or not the document has the specified tag</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>tagName</strong>: Whether or not the document has the specified tag</span></span></li><li><span class="tab"><span class="meta">hasTag</span>(<span class="meta">tagName</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of wordLike token strings in a main sequence</span></span></li><li><span class="tab"><span class="meta">wordLikes</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Returns true if a main sequence contains the specified tokens</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>chars</strong>: Token strings to be matched exactly</span></span></li><li><span class="tab"><span class="comment line">#   <strong>allChars</strong>: If true all tokens must match</span></span></li><li><span class="tab"><span class="meta">hasChars</span>(<span class="meta">chars</span>: [<a class="support type" href="string.doc.html">String</a>!], <span class="meta">allChars</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Returns true if a main sequence contains a match for specified regexes</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>chars</strong>: Regexes to be matched</span></span></li><li><span class="tab"><span class="comment line">#   <strong>allChars</strong>: If true all regexes must match</span></span></li><li><span class="tab"><span class="meta">hasMatchingChars</span>(<span class="meta">chars</span>: [<a class="support type" href="string.doc.html">String</a>!], <span class="meta">allChars</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:56px"><li><span class="keyword operator ts">type</span> <span class="identifier">Sequence</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the sequence</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The type of the sequence (main, heading...)</span></span></li><li><span class="tab"><span class="meta">type</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of blocks in the sequence</span></span></li><li><span class="tab"><span class="meta">nBlocks</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The blocks in the sequence</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withScopes</strong>: Only return blocks where the list of scopes is open</span></span></li><li><span class="tab"><span class="comment line">#   <strong>positions</strong>: Only return blocks whose zero-indexed position is in </span></span></li><li><span class="tab"><span class="comment line">#   the list</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withBlockScope</strong>: Only return blocks with the specified block </span></span></li><li><span class="tab"><span class="comment line">#   scope (eg 'blockScope/p')</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withScriptureCV</strong>: Only return blocks that contain items within </span></span></li><li><span class="tab"><span class="comment line">#   the specified chapter, verse or chapterVerse range</span></span></li><li><span class="tab"><span class="comment line">#   <strong>attSpecs</strong>: Ordered list of attribute specs whose values must </span></span></li><li><span class="tab"><span class="comment line">#   match those in 'attValues'</span></span></li><li><span class="tab"><span class="comment line">#   <strong>attValues</strong>: Ordered list of attribute values, used in </span></span></li><li><span class="tab"><span class="comment line">#   conjunction with 'attSpecs'</span></span></li><li><span class="tab"><span class="comment line">#   <strong>allAtts</strong>: If true, blocks where all attSpecs match will be </span></span></li><li><span class="tab"><span class="comment line">#   included</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withChars</strong>: Return blocks containing a token whose payload is an </span></span></li><li><span class="tab"><span class="comment line">#   exact match to one of the specified strings</span></span></li><li><span class="tab"><span class="comment line">#   <strong>withMatchingChars</strong>: Return blocks containing a token whose </span></span></li><li><span class="tab"><span class="comment line">#   payload matches the specified regexes</span></span></li><li><span class="tab"><span class="comment line">#   <strong>allChars</strong>: If true, blocks where all regexes match will be </span></span></li><li><span class="tab"><span class="comment line">#   included</span></span></li><li><span class="tab"><span class="meta">blocks</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">withScopes</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">positions</span>: [<a class="support type" href="int.doc.html">Int</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withBlockScope</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withScriptureCV</span>: <a class="support type" href="string.doc.html">String</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">attSpecs</span>: [[<a class="support type" href="attspec.doc.html">AttSpec</a>!]!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">attValues</span>: [[<a class="support type" href="string.doc.html">String</a>!]!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">allAtts</span>: <a class="support type" href="boolean.doc.html">Boolean</a>,</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withChars</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">withMatchingChars</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">allChars</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></span></li><li><span class="tab">): [<a class="support type" href="block.doc.html">Block</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The items for each block in the sequence</span></span></li><li><span class="tab"><span class="meta">blocksItems</span>: [[<a class="support type" href="item.doc.html">Item</a>!]!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The tokens for each block in the sequence</span></span></li><li><span class="tab"><span class="meta">blocksTokens</span>: [[<a class="support type" href="item.doc.html">Item</a>!]!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The text for each block in the sequence</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>normalizeSpace</strong>: If true, converts each whitespace character to </span></span></li><li><span class="tab"><span class="comment line">#   a single space</span></span></li><li><span class="tab"><span class="meta">blocksText</span>(<span class="meta">normalizeSpace</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The text for the sequence</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>normalizeSpace</strong>: If true, converts each whitespace character to </span></span></li><li><span class="tab"><span class="comment line">#   a single space</span></span></li><li><span class="tab"><span class="meta">text</span>(<span class="meta">normalizeSpace</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Sequence content grouped by scopes or milestones</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>byScopes</strong>: Produce one itemGroup for every different match of </span></span></li><li><span class="tab"><span class="comment line">#   the list of scopes</span></span></li><li><span class="tab"><span class="comment line">#   <strong>byMilestones</strong>: Start a new itemGroup whenever a milestone in the </span></span></li><li><span class="tab"><span class="comment line">#   list is encountered</span></span></li><li><span class="tab"><span class="comment line">#   <strong>includeContext</strong>: If true, adds scope and nextToken information </span></span></li><li><span class="tab"><span class="comment line">#   to each token</span></span></li><li><span class="tab"><span class="meta">itemGroups</span>(</span></li><li><span class="tab"><span class="tab"><span class="meta">byScopes</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">byMilestones</span>: [<a class="support type" href="string.doc.html">String</a>!],</span></span></li><li><span class="tab"><span class="tab"><span class="meta">includeContext</span>: <a class="support type" href="boolean.doc.html">Boolean</a></span></span></li><li><span class="tab">): [<a class="support type" href="itemgroup.doc.html">ItemGroup</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of the tags of this sequence</span></span></li><li><span class="tab"><span class="meta">tags</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether or not the sequence has the specified tag</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>tagName</strong>: The specified tag</span></span></li><li><span class="tab"><span class="meta">hasTag</span>(<span class="meta">tagName</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of wordLike token strings in a main sequence</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>coerceCase</strong>: Whether to coerce the strings </span></span></li><li><span class="tab"><span class="comment line">#   (toLower|toUpper|none)</span></span></li><li><span class="tab"><span class="meta">wordLikes</span>(<span class="meta">coerceCase</span>: <a class="support type" href="string.doc.html">String</a>): [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Returns true if a main sequence contains the specified tokens</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>chars</strong>: Token strings to be matched exactly</span></span></li><li><span class="tab"><span class="comment line">#   <strong>allChars</strong>: If true all tokens must match</span></span></li><li><span class="tab"><span class="meta">hasChars</span>(<span class="meta">chars</span>: [<a class="support type" href="string.doc.html">String</a>!], <span class="meta">allChars</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Returns true if a main sequence contains a match for specified regexes</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>chars</strong>: Regexes to be matched</span></span></li><li><span class="tab"><span class="comment line">#   <strong>allChars</strong>: If true all regexes must match</span></span></li><li><span class="tab"><span class="meta">hasMatchingChars</span>(<span class="meta">chars</span>: [<a class="support type" href="string.doc.html">String</a>!], <span class="meta">allChars</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -296,7 +356,7 @@
 </div>
 </footer>
 </main>
-    <script src="scripts/focus-active.js"></script>
-    <script src="scripts/filter-types.js"></script>
-    <script src="scripts/toggle-navigation.js"></script>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
 </body>

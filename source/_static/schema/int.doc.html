@@ -6,9 +6,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="styles/graphdoc.css" />
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
     <title>Int</title>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="assets/code.css" /><link type="text/css" rel="stylesheet" href="assets/require-by.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
     <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
@@ -16,7 +16,7 @@
             <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
                 <i class="material-icons">close</i>
             </button>
-                <h3 class="slds-text-heading--medium"><a href="">GraphQL Schema</a></h3>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
             <div class="slds-p-top--small">
                 <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
             </div>
@@ -80,6 +80,11 @@
                 Block
             </a>
         </li>
+        <li  title="cell">
+            <a href="cell.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                cell
+            </a>
+        </li>
         <li  title="cIndex">
             <a href="cindex.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 cIndex
@@ -125,6 +130,11 @@
                 Document
             </a>
         </li>
+        <li  title="idParts">
+            <a href="idparts.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                idParts
+            </a>
+        </li>
         <li  title="Item">
             <a href="item.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Item
@@ -138,6 +148,21 @@
         <li  title="KeyValue">
             <a href="keyvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 KeyValue
+            </a>
+        </li>
+        <li  title="kvEntry">
+            <a href="kventry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                kvEntry
+            </a>
+        </li>
+        <li  title="kvSequence">
+            <a href="kvsequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                kvSequence
+            </a>
+        </li>
+        <li  title="node">
+            <a href="node.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                node
             </a>
         </li>
         <li  title="orig">
@@ -158,6 +183,16 @@
         <li  title="Sequence">
             <a href="sequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Sequence
+            </a>
+        </li>
+        <li  title="tableSequence">
+            <a href="tablesequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                tableSequence
+            </a>
+        </li>
+        <li  title="treeSequence">
+            <a href="treesequence.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                treeSequence
             </a>
         </li>
         <li  title="verseNumber">
@@ -210,6 +245,11 @@
                 AttSpec
             </a>
         </li>
+        <li  title="InputBlockSpec">
+            <a href="inputblockspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                InputBlockSpec
+            </a>
+        </li>
         <li  title="InputItemObject">
             <a href="inputitemobject.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InputItemObject
@@ -218,6 +258,26 @@
         <li  title="InputKeyValue">
             <a href="inputkeyvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InputKeyValue
+            </a>
+        </li>
+        <li  title="KeyMatches">
+            <a href="keymatches.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KeyMatches
+            </a>
+        </li>
+        <li  title="KeyValues">
+            <a href="keyvalues.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                KeyValues
+            </a>
+        </li>
+        <li  title="rowEqualsSpec">
+            <a href="rowequalsspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                rowEqualsSpec
+            </a>
+        </li>
+        <li  title="rowMatchSpec">
+            <a href="rowmatchspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                rowMatchSpec
             </a>
         </li>
     </ul>
@@ -285,7 +345,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="attspec.doc.html" title="AttSpec - Attribute Specification">AttSpec<em>Attribute Specification</em></a><li><li><a href="block.doc.html" title="Block - Part of a sequence, roughly equivalent to a USFM paragraph">Block<em>Part of a sequence, roughly equivalent to a USFM paragraph</em></a><li><li><a href="cindex.doc.html" title="cIndex - A chapter index entry">cIndex<em>A chapter index entry</em></a><li><li><a href="cv.doc.html" title="cv - A chapter-verse reference">cv<em>A chapter-verse reference</em></a><li><li><a href="cvindex.doc.html" title="cvIndex - A chapterVerse index entry">cvIndex<em>A chapterVerse index entry</em></a><li><li><a href="cvverseelement.doc.html" title="cvVerseElement - Information about a verse element">cvVerseElement<em>Information about a verse element</em></a><li><li><a href="diffrecord.doc.html" title="diffRecord - A record in a diff report">diffRecord<em>A record in a diff report</em></a><li><li><a href="docset.doc.html" title="DocSet - A collection of documents that share the same set of selector values">DocSet<em>A collection of documents that share the same set of selector values</em></a><li><li><a href="document.doc.html" title="Document - A document, typically corresponding to USFM for one book">Document<em>A document, typically corresponding to USFM for one book</em></a><li><li><a href="item.doc.html" title="Item - Item">Item<em>Item</em></a><li><li><a href="mutation.doc.html" title="Mutation - Operations that change the state of Proskomma">Mutation<em>Operations that change the state of Proskomma</em></a><li><li><a href="query.doc.html" title="Query - The top level of Proskomma queries">Query<em>The top level of Proskomma queries</em></a><li><li><a href="regexindex.doc.html" title="regexIndex - Information about a regex match on an enum">regexIndex<em>Information about a regex match on an enum</em></a><li><li><a href="sequence.doc.html" title="Sequence - A contiguous flow of content">Sequence<em>A contiguous flow of content</em></a><li><li><a href="versenumber.doc.html" title="verseNumber - Information about a verse number (which may be part of a verse range)">verseNumber<em>Information about a verse number (which may be part of a verse range)</em></a><li><li><a href="verserange.doc.html" title="verseRange - Information about a verse range (which may only cover one verse)">verseRange<em>Information about a verse range (which may only cover one verse)</em></a><li></ul>
+        <ul class="require-by"><li><a href="attspec.doc.html" title="AttSpec - Attribute Specification">AttSpec<em>Attribute Specification</em></a><li><li><a href="block.doc.html" title="Block - Part of a sequence, roughly equivalent to a USFM paragraph">Block<em>Part of a sequence, roughly equivalent to a USFM paragraph</em></a><li><li><a href="cell.doc.html" title="cell - A table cell">cell<em>A table cell</em></a><li><li><a href="cindex.doc.html" title="cIndex - A chapter index entry">cIndex<em>A chapter index entry</em></a><li><li><a href="cv.doc.html" title="cv - A chapter-verse reference">cv<em>A chapter-verse reference</em></a><li><li><a href="cvindex.doc.html" title="cvIndex - A chapterVerse index entry">cvIndex<em>A chapterVerse index entry</em></a><li><li><a href="cvverseelement.doc.html" title="cvVerseElement - Information about a verse element">cvVerseElement<em>Information about a verse element</em></a><li><li><a href="diffrecord.doc.html" title="diffRecord - A record in a diff report">diffRecord<em>A record in a diff report</em></a><li><li><a href="docset.doc.html" title="DocSet - A collection of documents that share the same set of selector values">DocSet<em>A collection of documents that share the same set of selector values</em></a><li><li><a href="document.doc.html" title="Document - A document, typically corresponding to USFM for one book">Document<em>A document, typically corresponding to USFM for one book</em></a><li><li><a href="idparts.doc.html" title="idParts - Type-dependent parts of the ID header">idParts<em>Type-dependent parts of the ID header</em></a><li><li><a href="item.doc.html" title="Item - Item">Item<em>Item</em></a><li><li><a href="kvsequence.doc.html" title="kvSequence - A contiguous flow of content for key-values">kvSequence<em>A contiguous flow of content for key-values</em></a><li><li><a href="mutation.doc.html" title="Mutation - Operations that change the state of Proskomma">Mutation<em>Operations that change the state of Proskomma</em></a><li><li><a href="query.doc.html" title="Query - The top level of Proskomma queries">Query<em>The top level of Proskomma queries</em></a><li><li><a href="regexindex.doc.html" title="regexIndex - Information about a regex match on an enum">regexIndex<em>Information about a regex match on an enum</em></a><li><li><a href="rowequalsspec.doc.html" title="rowEqualsSpec - Row Equals Specification">rowEqualsSpec<em>Row Equals Specification</em></a><li><li><a href="rowmatchspec.doc.html" title="rowMatchSpec - Row Match Specification">rowMatchSpec<em>Row Match Specification</em></a><li><li><a href="sequence.doc.html" title="Sequence - A contiguous flow of content">Sequence<em>A contiguous flow of content</em></a><li><li><a href="tablesequence.doc.html" title="tableSequence - A contiguous flow of content for a table">tableSequence<em>A contiguous flow of content for a table</em></a><li><li><a href="treesequence.doc.html" title="treeSequence - The nodes of a tree">treeSequence<em>The nodes of a tree</em></a><li><li><a href="versenumber.doc.html" title="verseNumber - Information about a verse number (which may be part of a verse range)">verseNumber<em>Information about a verse number (which may be part of a verse range)</em></a><li><li><a href="verserange.doc.html" title="verseRange - Information about a verse range (which may only cover one verse)">verseRange<em>Information about a verse range (which may only cover one verse)</em></a><li></ul>
     </div>
 </section>
 <footer>
@@ -296,7 +356,7 @@
 </div>
 </footer>
 </main>
-    <script src="scripts/focus-active.js"></script>
-    <script src="scripts/filter-types.js"></script>
-    <script src="scripts/toggle-navigation.js"></script>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
 </body>
