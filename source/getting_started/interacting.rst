@@ -16,7 +16,7 @@ In several of the following examples, the query is
 
 This is the shortest possible Proskomma query, and returns the unique id of the Proskomma instance.
 (While short, this query is not that useful, except for 'hello world' testing, and for checking that
-Proskomma has not been overwritten unintentionally.)
+the Proskomma instance has not been overwritten unintentionally.)
 
 .. toctree::
    :maxdepth: 5

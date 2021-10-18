@@ -6,7 +6,7 @@ Installing Proskomma
 
 Proskomma is a Javascript library. The simplest way to install it is using npm:
 
-.. code-block:: bash
+.. code:: bash
 
    npm install proskomma
    # or
@@ -14,8 +14,8 @@ Proskomma is a Javascript library. The simplest way to install it is using npm:
 
 The proskomma module returns an object you will probably want to dereference:
 
-.. code-block:: javascript
+.. code:: javascript
 
-   const { Proskomma } = require('proskomma);
+   const { Proskomma } = require('proskomma');
    // or
    import { Proskomma } from 'proskomma';
