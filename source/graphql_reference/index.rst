@@ -4,6 +4,9 @@
 GraphQL Reference
 #################
 
+This section introduces and links to various parts of the `schema documentation <../_static/schema/index.html>`_ that has been auto-generated
+using `graphdoc <https://www.npmjs.com/package/@2fd/graphdoc>`_.
+
 .. toctree::
    :maxdepth: 5
 
@@ -11,7 +14,7 @@ GraphQL Reference
    doc_set
    tag
    document
-   sequence
+   sequences
    block
    item_group
    indexes
@@ -19,3 +22,4 @@ GraphQL Reference
    token
    graft
    scope
+   mutations

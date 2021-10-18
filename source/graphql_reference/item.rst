@@ -1,5 +1,7 @@
-.. _graphql_item:
+.. _graphql_items:
 
-####
-Item
-####
+#####
+Items
+#####
+
+See the `full schema for items <../_static/schema/item.doc.html>`_ for more details.

@@ -1,5 +1,7 @@
 .. _graphql_item_group:
 
-##########
-ItemGroups
-##########
+###########
+Item Groups
+###########
+
+See the `full schema for itemGroups <../_static/schema/itemgroup.doc.html>`_ for more details.
