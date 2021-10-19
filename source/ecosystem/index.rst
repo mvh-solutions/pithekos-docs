@@ -9,3 +9,4 @@ The Proskomma Ecosystem
 
    chaliki
    node_express
+   koniortos

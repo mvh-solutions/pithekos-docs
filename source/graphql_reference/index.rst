@@ -35,7 +35,7 @@ Major Schema Types
 ++++++++++++++++++
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 2
 
    top_level_fields
    doc_set

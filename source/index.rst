@@ -10,6 +10,7 @@ A Scripture Runtime Engine
    background/index
    getting_started/index
    graphql_reference/index
+   rendering_serializing/index
    implementation/index
    getting_involved/index
    faq/index

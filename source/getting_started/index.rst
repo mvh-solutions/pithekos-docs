@@ -5,7 +5,7 @@ Getting Started
 ###############
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 2
 
    installation
    interacting
