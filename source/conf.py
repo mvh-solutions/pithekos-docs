@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'proskomma'
-copyright = '2020, Mark Howe'
+copyright = '2021, Mark Howe'
 author = 'Mark Howe'
 
 # The full version, including alpha/beta/rc tags
