@@ -22,7 +22,7 @@ copyright = '2020, Mark Howe'
 author = 'Mark Howe'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = '0.6'
 
 
 # -- General configuration ---------------------------------------------------

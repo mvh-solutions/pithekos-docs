@@ -9,13 +9,11 @@ text sequence, to which other sequences may be grafted. For example, titles and 
 are grafted to another sequence.
 
 By default, all sequences are treated as text sequences. (This always 'works' although the results may not be very useful in some cases.)
-The schema for text sequences is described below. Separate fields are provided for non-text sequences:
 
 .. toctree::
    :maxdepth: 5
 
+   text_sequence
    table_sequence
    tree_sequence
    kv_sequence
-
-See the `full schema for text sequences <../_static/schema/sequence.doc.html>`_ for more details.
