@@ -14,6 +14,7 @@ Identification
 Each sequence has a generated id that it unique to the Proskomma instance. It also has a type. For the main sequence,
 which is always a text sequence, that type is 'main'. For non-text sequences the type is 'table', 'tree' or 'kv'. Other types are used for parts of the decomposed text document, such as headings, footnotes and sidebars.
 
+----
 Tags
 ----
 
@@ -39,6 +40,7 @@ Token Information
 
 Fields exist to return all the unique tokens used in a sequence, and to test whether specific tokens are used.
 
+------------------
 Convenience Fields
 ------------------
 
