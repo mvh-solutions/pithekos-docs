@@ -3,3 +3,5 @@
 ##################
 Diegesis Ionic App
 ##################
+
+See `the github repo <https://github.com/Proskomma/diegesis>`_.
