@@ -22,13 +22,6 @@ web browser at
 
   http://localhost:2468
 
-There's a link on the homepage to a very basic HTML form which POSTs a query and displays the result.
-You can try this with
-
-.. code:: bash
-
-   { id }
-
 Now open a second terminal window (since the server needs to continue running) and type
 
 .. code:: bash

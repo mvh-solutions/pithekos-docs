@@ -21,8 +21,8 @@ the Proskomma instance has not been overwritten unintentionally.)
 .. toctree::
    :maxdepth: 5
 
+   graphql_playground
    command_line
    javascript
    curl
-   graphql_client
    chaliki
