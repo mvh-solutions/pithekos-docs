@@ -226,7 +226,7 @@ Modify your script as follows:
    const fse = require('fs-extra');
    const { Proskomma } = require('proskomma');
    const pk = new Proskomma();
-   let content = fse.readFileSync(path.resolve(__dirname, './psa.usfm').toString();
+   let content = fse.readFileSync(path.resolve(__dirname, './psa.usfm')).toString();
 
    const queryPk = async function (pk, query) {
        const result = await pk.gqlQuery(query);
@@ -264,7 +264,7 @@ which tells us that the `addDocument` mutation succeeded. Now let's add a query 
    const fse = require('fs-extra');
    const { Proskomma } = require('proskomma');
    const pk = new Proskomma();
-   let content = fse.readFileSync(path.resolve(__dirname, './psa.usfm').toString();
+   let content = fse.readFileSync(path.resolve(__dirname, './psa.usfm')).toString();
 
    const queryPk = async function (pk, query) {
        const result = await pk.gqlQuery(query);
