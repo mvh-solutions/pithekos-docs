@@ -4,4 +4,4 @@
 Proskomma Node Express Server
 #############################
 
-See `the github repo <https://github.com/mvahowe/proskomma-node-express>`_.
+See `the github repo <https://github.com/Proskomma/diegesis-apollo-sandbox>`_.
