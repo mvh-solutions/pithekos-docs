@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>InputBlockSpec</title>
+    <title>inputBlockSpec</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -113,11 +113,6 @@
         <li  title="cvVerses">
             <a href="cvverses.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 cvVerses
-            </a>
-        </li>
-        <li  title="diffRecord">
-            <a href="diffrecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                diffRecord
             </a>
         </li>
         <li  title="DocSet">
@@ -245,9 +240,9 @@
                 AttSpec
             </a>
         </li>
-        <li class="slds-is-active" title="InputBlockSpec">
+        <li class="slds-is-active" title="inputBlockSpec">
             <a href="inputblockspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                InputBlockSpec
+                inputBlockSpec
             </a>
         </li>
         <li  title="InputItemObject">
@@ -258,6 +253,11 @@
         <li  title="InputKeyValue">
             <a href="inputkeyvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InputKeyValue
+            </a>
+        </li>
+        <li  title="inputSelectorSpec">
+            <a href="inputselectorspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                inputSelectorSpec
             </a>
         </li>
         <li  title="KeyMatches">
@@ -321,7 +321,7 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">INPUT_OBJECT</p>
-        <h1 class="slds-text-heading--large">InputBlockSpec</h1>
+        <h1 class="slds-text-heading--large">inputBlockSpec</h1>
         <div class="slds-text-body--regular"><p>A specification to create or update a block</p>
 </div>
     </div>
@@ -334,7 +334,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">InputBlockSpec</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The block scope as an item</span></span></li><li><span class="tab"><span class="meta">bs</span>: <a class="support type" href="inputitemobject.doc.html">InputItemObject</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The block grafts as items</span></span></li><li><span class="tab"><span class="meta">bg</span>: [<a class="support type" href="inputitemobject.doc.html">InputItemObject</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The open scopes as items</span></span></li><li><span class="tab"><span class="meta">os</span>: [<a class="support type" href="inputitemobject.doc.html">InputItemObject</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The included scopes as items</span></span></li><li><span class="tab"><span class="meta">is</span>: [<a class="support type" href="inputitemobject.doc.html">InputItemObject</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The items</span></span></li><li><span class="tab"><span class="meta">items</span>: [<a class="support type" href="inputitemobject.doc.html">InputItemObject</a>!]!</span></li></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">inputBlockSpec</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The block scope as an item</span></span></li><li><span class="tab"><span class="meta">bs</span>: <a class="support type" href="inputitemobject.doc.html">InputItemObject</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The block grafts as items</span></span></li><li><span class="tab"><span class="meta">bg</span>: [<a class="support type" href="inputitemobject.doc.html">InputItemObject</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The open scopes as items</span></span></li><li><span class="tab"><span class="meta">os</span>: [<a class="support type" href="inputitemobject.doc.html">InputItemObject</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The included scopes as items</span></span></li><li><span class="tab"><span class="meta">is</span>: [<a class="support type" href="inputitemobject.doc.html">InputItemObject</a>!]!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   The items</span></span></li><li><span class="tab"><span class="meta">items</span>: [<a class="support type" href="inputitemobject.doc.html">InputItemObject</a>!]!</span></li></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -345,7 +345,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="mutation.doc.html" title="Mutation - Operations that change the state of Proskomma">Mutation<em>Operations that change the state of Proskomma</em></a><li></ul>
+        <ul class="require-by"><li><a href="mutation.doc.html" title="Mutation - ">Mutation<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>

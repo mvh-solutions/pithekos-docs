@@ -3,10 +3,10 @@ Documentation for the Proskomma Ecosystem
 
 ## To generate GraphQL documentation
 
-- update proskomma-node-express to latest Proskomma
-- `npm dev run`
+- update diegesis-apollo-sandbox to latest Proskomma
+- `node index.js`
 - delete source/_static/schema
 - In another session: `graphdoc -e http://localhost:2468/gql -o ./source/_static/schema/`
 
-## To build the documentation
-
+## To build documentation locally
+`make html`

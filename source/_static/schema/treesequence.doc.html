@@ -115,11 +115,6 @@
                 cvVerses
             </a>
         </li>
-        <li  title="diffRecord">
-            <a href="diffrecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                diffRecord
-            </a>
-        </li>
         <li  title="DocSet">
             <a href="docset.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 DocSet
@@ -245,9 +240,9 @@
                 AttSpec
             </a>
         </li>
-        <li  title="InputBlockSpec">
+        <li  title="inputBlockSpec">
             <a href="inputblockspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                InputBlockSpec
+                inputBlockSpec
             </a>
         </li>
         <li  title="InputItemObject">
@@ -258,6 +253,11 @@
         <li  title="InputKeyValue">
             <a href="inputkeyvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InputKeyValue
+            </a>
+        </li>
+        <li  title="inputSelectorSpec">
+            <a href="inputselectorspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                inputSelectorSpec
             </a>
         </li>
         <li  title="KeyMatches">
@@ -334,7 +334,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">treeSequence</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the sequence</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of nodes in the tree sequence</span></span></li><li><span class="tab"><span class="meta">nNodes</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The nodes in the tree sequence</span></span></li><li><span class="tab"><span class="meta">nodes</span>: [<a class="support type" href="node.doc.html">node</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The JSON result for a Tribos query, as a string</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>query</strong>: The Tribos query string</span></span></li><li><span class="tab"><span class="meta">tribos</span>(<span class="meta">query</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   Tribos documentation</span></span></li><li><span class="tab"><span class="meta">tribosDoc</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of the tags of this sequence</span></span></li><li><span class="tab"><span class="meta">tags</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether or not the sequence has the specified tag</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>tagName</strong>: The tag name</span></span></li><li><span class="tab"><span class="meta">hasTag</span>(<span class="meta">tagName</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">treeSequence</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The id of the sequence</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The number of nodes in the tree sequence</span></span></li><li><span class="tab"><span class="meta">nNodes</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The nodes in the tree sequence</span></span></li><li><span class="tab"><span class="meta">nodes</span>: [<a class="support type" href="node.doc.html">node</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The JSON result for a Tribos query, as a string</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>query</strong>: The Tribos query string</span></span></li><li><span class="tab"><span class="meta">tribos</span>(<span class="meta">query</span>: <a class="support type" href="string.doc.html">String</a>!): <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The JSON results for the Tribos queries, as an array of strings</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>queries</strong>: The Tribos query strings</span></span></li><li><span class="tab"><span class="meta">triboi</span>(<span class="meta">queries</span>: [<a class="support type" href="string.doc.html">String</a>!]!): [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Tribos documentation</span></span></li><li><span class="tab"><span class="meta">tribosDoc</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of the tags of this sequence</span></span></li><li><span class="tab"><span class="meta">tags</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   A list of the tags of this sequence as key/value tuples</span></span></li><li><span class="tab"><span class="meta">tagsKv</span>: [<a class="support type" href="keyvalue.doc.html">KeyValue</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   Whether or not the sequence has the specified tag</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>tagName</strong>: The tag name</span></span></li><li><span class="tab"><span class="meta">hasTag</span>(<span class="meta">tagName</span>: <a class="support type" href="string.doc.html">String</a>): <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>

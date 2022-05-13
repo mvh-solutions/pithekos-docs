@@ -115,11 +115,6 @@
                 cvVerses
             </a>
         </li>
-        <li  title="diffRecord">
-            <a href="diffrecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                diffRecord
-            </a>
-        </li>
         <li  title="DocSet">
             <a href="docset.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 DocSet
@@ -245,9 +240,9 @@
                 AttSpec
             </a>
         </li>
-        <li  title="InputBlockSpec">
+        <li  title="inputBlockSpec">
             <a href="inputblockspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                InputBlockSpec
+                inputBlockSpec
             </a>
         </li>
         <li  title="InputItemObject">
@@ -258,6 +253,11 @@
         <li  title="InputKeyValue">
             <a href="inputkeyvalue.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 InputKeyValue
+            </a>
+        </li>
+        <li  title="inputSelectorSpec">
+            <a href="inputselectorspec.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                inputSelectorSpec
             </a>
         </li>
         <li  title="KeyMatches">
@@ -334,7 +334,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">node</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The node id</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The node parent id</span></span></li><li><span class="tab"><span class="meta">parentId</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The keys for content</span></span></li><li><span class="tab"><span class="meta">keys</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The content as itemGroups</span></span></li><li><span class="tab"><span class="meta">itemGroups</span>: [<a class="support type" href="itemgroup.doc.html">ItemGroup</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The node children ids</span></span></li><li><span class="tab"><span class="meta">childIds</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">node</span> {</li><li></li><li><span class="tab"><span class="comment line">#   The node id</span></span></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The node parent id</span></span></li><li><span class="tab"><span class="meta">parentId</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   The keys for content</span></span></li><li><span class="tab"><span class="meta">keys</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The content as itemGroups</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>includeContext</strong>: If true, adds scope and nextToken information </span></span></li><li><span class="tab"><span class="comment line">#   to each token</span></span></li><li><span class="tab"><span class="meta">itemGroups</span>(<span class="meta">includeContext</span>: <a class="support type" href="boolean.doc.html">Boolean</a>): [<a class="support type" href="itemgroup.doc.html">ItemGroup</a>!]! </span></li><li></li><li><span class="tab"><span class="comment line">#   The node children ids</span></span></li><li><span class="tab"><span class="meta">childIds</span>: [<a class="support type" href="string.doc.html">String</a>!]! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
